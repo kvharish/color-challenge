@@ -1,9 +1,24 @@
 .continueMsg {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1.5rem;
 }
 
 .continueMsg span {
   margin-right: 1rem;
+}
+
+@media (max-width: 767px) {
+  .continueMsg {
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    padding: 1rem;
+  }
+
+  .mobile {
+    display: none;
+  }
 }

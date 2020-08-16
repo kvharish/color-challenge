@@ -112,7 +112,7 @@ class Challenge extends Component {
     return (
       <Fragment>
         {mainElements}
-        {this.state.showAnswer ? <p className={classes.continueMsg}>{emoji}</p> : <p className={classes.continueMsg}>&nbsp;</p>}
+        {this.state.showAnswer ? <p className={classes.continueMsg}>{emoji}</p> : <p className={`${classes.continueMsg} ${classes.mobile}`}>&nbsp;</p>}
         <Menu history={this.props.history} showAnswer={this.state.showAnswer} showNextQuestion={this.showNextQuestion}/>
         <Score totalCorrect={this.state.totalCorrect} totalQuestions={this.state.totalQuestions} />
       </Fragment>

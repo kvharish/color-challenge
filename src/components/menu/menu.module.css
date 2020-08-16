@@ -27,3 +27,13 @@
   border: 1px solid #aaaaaa;
   pointer-events: none;
 }
+
+@media (max-width: 767px) {
+  .menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+}
