@@ -1,0 +1,24 @@
+.score {
+  border: 1px solid #000000;
+  margin: 2rem 0;
+  padding: 1rem;
+  width: 250px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 1rem;
+  background-color: #fafafa;
+}
+
+.score div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.score div span:first-child {
+  justify-self: right;
+}
+
+.score div span:last-child {
+  justify-self: center;
+}

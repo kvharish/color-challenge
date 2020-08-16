@@ -1,0 +1,16 @@
+.option {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.option span {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -2rem;
+}

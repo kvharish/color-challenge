@@ -1,0 +1,29 @@
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu span {
+  margin: 0.5rem;
+  color: #000000;
+  border: 1px solid #000000;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.menu span:hover {
+  transform: scale(1.1);
+}
+
+.menu span.disabled {
+  color: #aaaaaa;
+  border: 1px solid #aaaaaa;
+  pointer-events: none;
+}

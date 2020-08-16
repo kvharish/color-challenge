@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Header from './components/header/header';
+import Challenge from './containers/challenge/challenge';
+import Home from './components/home/home';
+
+const App = () => (
+  <div>
+    <Header />
+    <Switch>
+      <Route path="/challenge/:code/:difficulty" render={props => <Challenge {...props} routeName="challenge" />} />
+      <Route path="/" render={props => <Home {...props} routeName="home" />} />
+    </Switch>
+  </div>
+);
 
 export default App;

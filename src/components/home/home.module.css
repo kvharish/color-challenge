@@ -1,0 +1,33 @@
+.home {
+  display: grid;
+  justify-content: center;
+}
+
+.home label {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+}
+
+.home label select {
+  margin-left: 1rem;
+}
+
+.home a {
+  justify-self: center;
+  margin: 1rem;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+}
+
+.home a:hover {
+  transform: scale(1.1);
+}
